@@ -1,0 +1,76 @@
+---
+name: Conventions
+type: schema
+domain: schema
+tags:
+  - schema
+  - conventions
+aliases:
+  - Writing conventions
+last_updated: 2026-04-11
+sources: []
+---
+
+# Conventions
+
+## Repository layers
+
+- `raw-sources/`: curated indexes of external material. Prefer linking to primary sources; write only short, original notes.
+- `schema/`: templates + rules for writing pages.
+- `wiki/`: the actual trade-off wiki pages.
+
+## Folder layout (domain-first)
+
+Put pages under the most relevant domain folder:
+
+- `wiki/databases/`
+- `wiki/queues/`
+- `wiki/patterns/`
+- `wiki/case-summaries/`
+
+If you add a new domain, create a new folder under `wiki/`.
+
+## Filenames
+
+- Use `kebab-case.md`.
+- Prefer short, stable slugs (they become link targets).
+- Avoid spaces and punctuation.
+
+## Wikilinks
+
+To keep links robust on case-sensitive filesystems, link by slug and optionally set display text:
+
+- Prefer: `[[cassandra|Cassandra]]`
+- Avoid relying on case-only differences: `[[Cassandra]]` (may or may not resolve depending on environment)
+
+## Frontmatter (required)
+
+Every wiki page should have:
+
+- `name`: human readable name
+- `type`: one of `decision`, `tool`, `pattern`, `case-summary`
+- `domain`: matches the `wiki/<domain>/` folder
+- `tags`: list of tags
+- `aliases`: list (can be empty). Use aliases for common alternative names/abbreviations (e.g., `mongo`, `mongo-db`) so search and link suggestions are nicer.
+- `last_updated`: `YYYY-MM-DD`
+- `sources`: list of external URLs (can be empty for stubs)
+
+Tip: keep `Related` links mostly within `wiki/`; link to `raw-sources/` pages when you want to point to reading lists.
+
+## Sourcing + quoting policy
+
+- Don’t copy/paste large chunks from external sources.
+- Write a short paraphrase and link to the original.
+- If you need a quote, keep it short and attribute it.
+
+## Writing style
+
+- Bias toward decision drivers and operational consequences.
+- Prefer concrete signals (e.g., “tail latency becomes the bottleneck”) over generic statements.
+- Keep sections skimmable: bullets + small tables.
+
+## Updating pages
+
+- When you change meaningfully, bump `last_updated`.
+- Add sources for new claims.
+- Add at least one `Related` wikilink for navigability.
