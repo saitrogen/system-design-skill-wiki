@@ -1,4 +1,6 @@
-# System Design Trade-off Wiki
+<img width="1024" height="600" alt="image" src="https://github.com/user-attachments/assets/b9d6a626-399b-4b01-b8ad-af4343dace32" />
+
+# System Design skill Wiki
 
 Obsidian-friendly notes on system design decisions as **explicit trade-offs**. The goal is not encyclopedic coverage; it’s to capture *decision drivers, options, and consequences* with links to primary sources.
 
