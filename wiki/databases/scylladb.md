@@ -23,6 +23,7 @@ ScyllaDB is a Cassandra-compatible wide-column database implemented in C++ with 
 - You want Cassandra’s data model and APIs, but care a lot about p99 latency and efficiency
 - Write-heavy workloads where per-node performance matters (fewer nodes for the same load)
 - You can model your data around partition-key access patterns
+- You’re already on [[cassandra|Cassandra]] and hitting a GC/compaction wall (toil + latency spikes), and want a Cassandra-API-compatible path to lower tail latency
 
 ## When it doesn’t fit
 - You need rich ad-hoc queries, joins, or multi-row transactions
@@ -34,20 +35,21 @@ ScyllaDB is a Cassandra-compatible wide-column database implemented in C++ with 
 - Compaction, tombstones, and repairs still matter; speed doesn’t remove modeling mistakes
 - Driver routing/token awareness can materially affect latency at high load
 - Benchmark using your real schema and read/write mix; synthetic TPS numbers can mislead
+- Compatibility is often the deciding factor: ScyllaDB is Cassandra-API/CQL compatible enough to be approached as a drop-in replacement (validate parity for your drivers/features)
 
 ## Comparisons
 | Compared to | ScyllaDB tends to win when… | ScyllaDB tends to lose when… |
 | --- | --- | --- |
 | [[cassandra|Cassandra]] | You need lower tail latency / better per-node efficiency | You prefer the pure Apache stack or have deep Cassandra ops tooling already |
-| [[when-to-leave-mongodb|MongoDB]] | Your workload is narrow and needs predictable high write throughput | You need document flexibility + varied queries |
+| [[mongodb|MongoDB]] | Your workload is narrow and needs predictable high write throughput | You need document flexibility + varied queries |
 
 ## Real-world example
-- Discord: [[discord-message-storage|Discord: message storage evolution]] (MongoDB → Cassandra → ScyllaDB) as a message storage system at extreme write scale.
+- Discord: [[discord-message-storage|Discord: message storage evolution]] — moved from a high-toil Cassandra cluster to ScyllaDB; reduced node count (177 → 72) and stabilized tail latency (e.g., p99 historical fetch down to ~15ms).
 
 ## Related
 - [[cassandra|Cassandra]]
 - [[discord-message-storage|Discord: message storage evolution]]
-- [[when-to-leave-mongodb|When to leave MongoDB]]
+- [[mongodb|MongoDB]]
 
 ## Sources
 - https://www.scylladb.com/product/technology/shard-per-core-architecture/ — shard-per-core + Seastar approach

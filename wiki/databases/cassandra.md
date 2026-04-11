@@ -28,6 +28,7 @@ Apache Cassandra is a distributed wide-column database designed for high availab
 - You need joins, multi-row transactions, or complex ad-hoc querying
 - Your access patterns are not well-defined upfront (data modeling is query-driven)
 - You expect secondary indexes to behave like an OLTP database
+- You can’t afford high operational sensitivity to JVM GC + compaction backlogs (Discord reported GC pause–driven latency spikes and compaction-driven firefighting at large scale)
 
 ## Operational gotchas
 - Data modeling: schema follows your queries; partition + clustering keys matter
@@ -36,19 +37,23 @@ Apache Cassandra is a distributed wide-column database designed for high availab
 - Repairs: cluster health and consistency depend on repair strategy
 - Consistency: “tunable” means you must choose and operate the semantics intentionally
 
+## Trade-offs
+- Hidden cost: JVM + GC tuning and pause behavior can become a primary tail-latency driver as clusters scale.
+- Maintenance work (compaction/repair) can contend with production traffic; isolating or rate-limiting background work often becomes mandatory.
+
 ## Comparisons
 | Compared to | Cassandra tends to win when… | Cassandra tends to lose when… |
 | --- | --- | --- |
-| [[when-to-leave-mongodb|MongoDB]] | You have a write-heavy, key-based workload and want linear horizontal scale | You need flexible documents + varied query patterns |
+| [[mongodb|MongoDB]] | You have a write-heavy, key-based workload and want linear horizontal scale | You need flexible documents + varied query patterns |
 | [[scylladb|ScyllaDB]] | You prefer the Apache ecosystem and mature operational knowledge | You need lower tail latency / better per-node efficiency (often Scylla’s goal) |
 
 ## Real-world example
-- Discord: [[discord-message-storage|Discord: message storage evolution]] (MongoDB → Cassandra → ScyllaDB) for massive write volume and predictable reads.
+- Discord: [[discord-message-storage|Discord: message storage evolution]] — Cassandra worked well for the data model at huge write volume, but later became high-toil (hot partitions, compaction backlog, GC pause–driven tail-latency spikes).
 
 ## Related
 - [[scylladb|ScyllaDB]]
 - [[discord-message-storage|Discord: message storage evolution]]
-- [[when-to-leave-mongodb|When to leave MongoDB]]
+- [[mongodb|MongoDB]]
 
 ## Sources
 - https://cassandra.apache.org/doc/latest/ — official docs (data model, operations)

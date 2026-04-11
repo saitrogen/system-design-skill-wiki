@@ -42,7 +42,7 @@ What decision, trade-off, comparison, or design question does this page answer?
 - Follow-ups / mitigations:
 
 ## Related
-- `[[some-page-slug|Some related page]]`
+- `\[\[some-page-slug|Some related page\]\]`
 
 ## Sources
 - <url> — what you used it for

@@ -4,7 +4,7 @@ Map-of-content page for navigating the wiki layer.
 
 ## Start here
 - Databases
-  - [[when-to-leave-mongodb|When to leave MongoDB]]
+  - [[mongodb|MongoDB]]
   - [[cassandra|Cassandra]]
   - [[scylladb|ScyllaDB]]
 - Case summaries
