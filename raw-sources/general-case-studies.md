@@ -16,6 +16,7 @@ sources:
   - https://aws.amazon.com/builders-library/
   - https://dropbox.tech/
   - https://www.allthingsdistributed.com/2007/10/amazons_dynamo.html
+  - https://www.notion.so/blog/sharding-postgres-at-notion
 ---
 
 # General system design case studies (raw sources)
@@ -25,6 +26,7 @@ Curated pointers to system design trade-off write-ups (databases, storage, messa
 | Area | System / decision | Primary link | Why it’s useful (one line) |
 | --- | --- | --- | --- |
 | Storage | Discord message storage evolution | [How Discord Stores Trillions of Messages](https://discord.com/blog/how-discord-stores-trillions-of-messages) | Concrete “MongoDB → Cassandra → ScyllaDB” migration story. |
+| Databases | Notion sharding Postgres | [Sharding Postgres at Notion](https://www.notion.so/blog/sharding-postgres-at-notion) | Clear “vertical scaling wall → application-level sharding” story with migration mechanics (audit log, backfill, verification). |
 | Databases | Dynamo (Amazon) | [Amazon’s Dynamo](https://www.allthingsdistributed.com/2007/10/amazons_dynamo.html) | Classic trade-offs for highly available key-value storage. |
 | Databases | Bigtable (Google) | [Bigtable: A Distributed Storage System for Structured Data](https://research.google/pubs/bigtable-a-distributed-storage-system-for-structured-data/) | Tablet-based storage design and operational lessons. |
 | Databases | Spanner (Google) | [Spanner: Google’s Globally Distributed Database](https://research.google/pubs/spanner-googles-globally-distributed-database/) | Global consistency via TrueTime; latency/consistency trade-offs. |
