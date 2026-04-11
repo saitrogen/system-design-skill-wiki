@@ -3,14 +3,17 @@ name: ML system design case studies (raw sources)
 type: raw-sources
 domain: raw-sources
 tags:
-	- raw-sources
-	- ml
+
+  - raw-sources
+  - ml
 aliases:
-	- ML case studies
+
+  - ML case studies
 last_updated: 2026-04-11
 sources:
-	- https://github.com/Engineer1999/A-Curated-List-of-ML-System-Design-Case-Studies
-	- https://github.com/mallahyari/ml-practical-usecases
+
+  - https://github.com/Engineer1999/A-Curated-List-of-ML-System-Design-Case-Studies
+  - https://github.com/mallahyari/ml-practical-usecases
 ---
 
 # ML system design case studies (raw sources)

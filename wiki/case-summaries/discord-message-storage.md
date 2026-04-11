@@ -14,7 +14,6 @@ last_updated: 2026-04-11
 sources:
   - https://discord.com/blog/how-discord-stores-trillions-of-messages
 ---
-
 # Discord message storage evolution
 
 ## TL;DR

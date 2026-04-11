@@ -2,6 +2,8 @@
 
 Obsidian-friendly notes on system design decisions as **explicit trade-offs**. The goal is not encyclopedic coverage; it’s to capture *decision drivers, options, and consequences* with links to primary sources.
 
+Start here (Obsidian MOC): `wiki/meta/wiki-home.md`.
+
 ## Repository layout
 
 - `raw-sources/` — curated indexes of external posts/papers. Prefer primary sources; write only short, original notes.

@@ -48,7 +48,7 @@ To keep links robust on case-sensitive filesystems, link by slug and optionally 
 Every wiki page should have:
 
 - `name`: human readable name
-- `type`: one of `decision`, `tool`, `pattern`, `case-summary`
+- `type`: one of `decision`, `tool`, `pattern`, `case-summary`, `index`
 - `domain`: matches the `wiki/<domain>/` folder
 - `tags`: list of tags
 - `aliases`: list (can be empty). Use aliases for common alternative names/abbreviations (e.g., `mongo`, `mongo-db`) so search and link suggestions are nicer.
@@ -56,6 +56,8 @@ Every wiki page should have:
 - `sources`: list of external URLs (can be empty for stubs)
 
 Tip: keep `Related` links mostly within `wiki/`; link to `raw-sources/` pages when you want to point to reading lists.
+
+For navigation, prefer a MOC page like [[wiki-home|Wiki home]] and keep it under `wiki/`.
 
 ## Sourcing + quoting policy
 

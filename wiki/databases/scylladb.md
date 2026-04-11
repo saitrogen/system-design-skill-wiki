@@ -14,7 +14,6 @@ sources:
   - https://opensource.docs.scylladb.com/
   - https://discord.com/blog/how-discord-stores-trillions-of-messages
 ---
-
 # ScyllaDB
 
 ## What it is / what it optimizes for

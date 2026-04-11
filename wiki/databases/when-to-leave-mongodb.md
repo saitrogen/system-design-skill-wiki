@@ -15,7 +15,6 @@ sources:
   - https://discord.com/blog/how-discord-stores-trillions-of-messages
   - https://www.mongodb.com/docs/manual/sharding/
 ---
-
 # When to leave MongoDB
 
 ## TL;DR
@@ -57,7 +56,11 @@ MongoDB is a strong general-purpose document database, but it makes different tr
 - [[discord-message-storage|Discord: message storage evolution]]
 - [[cassandra|Cassandra]]
 - [[scylladb|ScyllaDB]]
+- [[wiki-home|Wiki home]]
+
+## Further reading
 - [[general-case-studies|General system design case studies (raw sources)]]
+- [[raw-sources-home|Raw sources home]]
 
 ## Sources
 - https://discord.com/blog/how-discord-stores-trillions-of-messages — real migration story (MongoDB → Cassandra → ScyllaDB)

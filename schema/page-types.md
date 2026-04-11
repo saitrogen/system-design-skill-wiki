@@ -53,6 +53,14 @@ Expected sections:
 - What worked / what hurt
 - Links to relevant `decision`/`tool` pages
 
+## `index`
+Use for: navigation / map-of-content (MOC) pages.
+
+Expected sections:
+- Start here (top links)
+- Domain jump list
+- Links to relevant raw-sources indexes
+
 ## Notes
 - It’s fine to omit empty sections, but keep the structure recognizable.
 - Every non-trivial page should include at least 1–2 external `sources`.

@@ -3,16 +3,19 @@ name: General system design case studies (raw sources)
 type: raw-sources
 domain: raw-sources
 tags:
-	- raw-sources
-	- systems-design
+
+  - raw-sources
+  - systems-design
 aliases:
-	- General case studies
-	- System design case studies
+
+  - General case studies
+  - System design case studies
 last_updated: 2026-04-11
 sources:
-	- https://aws.amazon.com/builders-library/
-	- https://dropbox.tech/
-	- https://www.allthingsdistributed.com/2007/10/amazons_dynamo.html
+
+  - https://aws.amazon.com/builders-library/
+  - https://dropbox.tech/
+  - https://www.allthingsdistributed.com/2007/10/amazons_dynamo.html
 ---
 
 # General system design case studies (raw sources)

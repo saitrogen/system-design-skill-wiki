@@ -4,14 +4,14 @@ type: decision
 domain: "<domain>"
 tags:
   - <tag>
-aliases:
-  - <optional alias>
-last_updated: YYYY-MM-DD  # update when you make meaningful edits
-sources:
-  - <https://example.com>
+aliases: []
+last_updated: 2026-04-11
+sources: []
 ---
 
 # <page name>
+
+Update `last_updated` when you make meaningful edits.
 
 ## TL;DR
 1–3 sentences: what to do, and why.

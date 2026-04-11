@@ -14,7 +14,6 @@ sources:
   - https://www.cs.cornell.edu/projects/ladis2009/papers/lakshman-ladis2009.pdf
   - https://discord.com/blog/how-discord-stores-trillions-of-messages
 ---
-
 # Cassandra
 
 ## What it is / what it optimizes for
