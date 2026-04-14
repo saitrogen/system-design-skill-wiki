@@ -30,7 +30,7 @@ __pycache__/
 test-runs/
 agent-sessions/
 skills-test-output/
-
+.agents
 # Temporary
 *.tmp
 *.bak
