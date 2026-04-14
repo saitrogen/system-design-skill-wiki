@@ -14,11 +14,11 @@ sources: []
 
 # Raw sources home
 
-Reading lists and curated link indexes. These pages should stay mostly “pointers + short notes” (no large copy/paste).
+Reading lists and curated link indexes. These pages should stay mostly "pointers + short notes" (no large copy/paste).
 
 ## Indexes
 - [[general-case-studies|General system design case studies (raw sources)]]
 - [[ml-case-studies|ML system design case studies (raw sources)]]
 
 ## Related
-- [[wiki-home|Wiki home]]
+- [[../wiki/index|Wiki home]]

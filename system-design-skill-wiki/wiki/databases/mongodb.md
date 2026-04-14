@@ -77,11 +77,11 @@ MongoDB is a strong general-purpose document database, but it makes different tr
 - [[discord-message-storage|Discord: message storage evolution]]
 - [[cassandra|Cassandra]]
 - [[scylladb|ScyllaDB]]
-- [[wiki-home|Wiki home]]
+- [[../wiki/index|Wiki home]]
 
 ## Further reading
 - [[general-case-studies|General system design case studies (raw sources)]]
-- [[raw-sources-home|Raw sources home]]
+- [[../raw-sources/index|Raw sources home]]
 
 ## Sources
 - https://discord.com/blog/how-discord-stores-trillions-of-messages — Cassandra → ScyllaDB migration, and why Cassandra became too high-toil at extreme scale
