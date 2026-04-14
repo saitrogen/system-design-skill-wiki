@@ -5,11 +5,15 @@ domain: "<domain>"
 tags:
   - <tag>
 aliases: []
-last_updated: 2026-04-11
+last_updated: 2026-04-14
 sources: []
 ---
 
 # <page name>
+
+**ℹ️ For tool pages, use `tool-template.md`. For decision pages, use `decision-template.md`.**
+
+This file is preserved for backwards compatibility. See `schema/_index.md` for guidance on which template to use.
 
 Update `last_updated` when you make meaningful edits.
 
@@ -46,4 +50,3 @@ What decision, trade-off, comparison, or design question does this page answer?
 
 ## Sources
 - <url> — what you used it for
-
