@@ -16,7 +16,6 @@ Tags live in a page’s frontmatter under `tags:` and must match one of the cano
 
 | Tag | Category | Meaning / when to use |
 | --- | --- | --- |
-| <tag> | meta | Template placeholder from `schema/entry-template.md`. Replace with a real tag; do not use in actual pages. |
 | caching | domain | Anything primarily about caching strategies, cache layers, and cache trade-offs. |
 | case-summary | page-type | Page summarizes a real-world system/decision (a company case study). |
 | containerization | technology | Docker and container-related content (isolation, images, registries). |

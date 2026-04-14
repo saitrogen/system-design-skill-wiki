@@ -102,4 +102,4 @@ Real production decisions:
 If you're deciding on a database but don't see your problem here:
 1. Check the **Related** links above
 2. Look at `raw-sources/databases` for external primers
-3. Create a new page (start from `schema/entry-template.md`) + add to this index
+3. Create a new page (start from `schema/tool-template.md` or `schema/decision-template.md`) + add to this index

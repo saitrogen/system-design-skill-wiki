@@ -141,7 +141,7 @@ These are narratives of actual system design decisions, constraints, and consequ
 ## Contributing a case study
 
 1. Find a good source (company blog post, talk, paper)
-2. Create `wiki/case-summaries/<company>-<topic>.md` (use `schema/entry-template.md`)
+2. Create `wiki/case-summaries/<company>-<topic>.md` (see schema guidance in `schema/_index.md` or existing case studies)
 3. Include timeline + key decision triggers
 4. Link back to tool/decision pages involved
 5. Add one-line summaries to this index + relevant domain indexes
