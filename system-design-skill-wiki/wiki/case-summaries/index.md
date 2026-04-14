@@ -63,12 +63,65 @@ These are narratives of actual system design decisions, constraints, and consequ
 
 ---
 
+### [[uber-sharding-strategy|Uber: sharding strategy]]
+
+**Problem:** Millions of concurrent rides require horizontal database scaling; single MySQL instance couldn't handle throughput.
+
+**Trigger:** Query latency climbing, lock contention on hot tables, replication lag
+
+**Solution:** Schemaless — a sharding abstraction layer above MySQL with consistent hashing
+
+**Key decisions:**
+- Transparent routing layer (hide sharding from app code)
+- Shard key selection (ride_id, driver_id — matches access patterns)
+- Consistent hashing with virtual nodes for smooth rebalancing
+- Dual-write during rebalancing; eventual consistency during migration
+
+**Learnings:**
+- Shard keys are immutable; choosing wrong key is expensive
+- Cross-shard transactions are slow; design tables for shard-local logic
+- Hotspots still happen (geographic concentration); need monitoring + adaptive routing
+- Rebalancing large shards takes months; test migration tools early
+
+**Related:** [[postgresql|PostgreSQL]], [[databases/index|Database decisions]], [[patterns/index|Patterns (sharding)]]
+
+---
+
+### [[netflix-caching-at-scale|Netflix: multi-tier caching at scale]]
+
+**Problem:** Billions of global requests to metadata + video infrastructure; single origin couldn't handle the throughput or geography.
+
+**Trigger:** Origin database saturated during peak hours, network egress bottleneck, cold-start spikes
+
+**Solution:** Multi-tier caching: Open Connect CDN (edge) + regional memcache (API tier) + application-level caching
+
+**Key decisions:**
+- Geographic distribution of cache layers (edge → regional → app)
+- Cache warming before deploys to avoid "thundering herd"
+- Epoch-based cache keys for bulk invalidation
+- Graceful degradation when cache layers fail
+
+**Learnings:**
+- Cache coherency complexity grows with tier count (invalidation delays are real)
+- Stale data bugs are subtle and production-specific; hard to reproduce locally
+- Memory efficiency tradeoffs (TTL length vs memory usage)
+- Cold-start failures (hot data not preloaded) cascade across all layers
+
+**Related:** [[redis|Redis]], [[caching/index|Caching decisions]], [[databases/index|Database decisions]]
+
+---
+
 ## By domain
 
 ### Databases
 
 - [[discord-message-storage|Discord: message storage]] — when to leave MongoDB for wide-column stores
 - [[notion-postgres-sharding|Notion: Postgres sharding]] — scaling a transactional database
+- [[uber-sharding-strategy|Uber: sharding strategy]] — building a sharding abstraction layer for MySQL
+
+### Caching
+
+- [[netflix-caching-at-scale|Netflix: multi-tier caching at scale]] — geography + cache tiers for global reach
 
 ### Queues
 
@@ -76,7 +129,7 @@ These are narratives of actual system design decisions, constraints, and consequ
 
 ### Infrastructure / Deployment
 
-*(To be added: Netflix, Uber examples)*
+*(To be added)*
 
 ## Why read case studies?
 

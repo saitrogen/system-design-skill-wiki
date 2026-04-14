@@ -59,6 +59,7 @@ This index links to all database decisions, trade-offs, and case studies in the 
 Real production decisions:
 - [[discord-message-storage|Discord message storage evolution]] — MongoDB → Cassandra → ScyllaDB (why & how)
 - [[notion-postgres-sharding|Notion Postgres sharding]] — hitting vertical scaling limits, sharding strategy
+- [[uber-sharding-strategy|Uber sharding strategy]] — Schemaless abstraction layer for MySQL scaling
 
 ## Trade-off comparisons
 
