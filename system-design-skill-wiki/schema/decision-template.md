@@ -68,3 +68,5 @@ sources: []
 
 - <url> — what you used it for
 - <url> — what you used it for
+
+**Note:** Sources in frontmatter should be just URLs (YAML list). Descriptions go here in the Sources section.

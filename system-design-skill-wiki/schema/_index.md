@@ -83,10 +83,18 @@ Is this page about ONE tool/technology?
 
 When adding a new page:
 1. Copy the appropriate template (tool or decision)
-2. Update the frontmatter: name, domain, tags, aliases
+2. Update the frontmatter: name, domain, tags, aliases, sources
 3. Follow the section order (don't skip sections)
 4. Use wikilinks for related pages (`[[page-slug|Display Text]]`)
 5. Add at least one external source link
 6. Tag properly; see `tags.md` for approved tags
 
-See `../CONTRIBUTING.md` for full contributor guidelines.
+**Frontmatter tip:** The `sources:` field is a YAML list of URLs:
+```yaml
+sources:
+  - https://example.com/article-1
+  - https://example.com/article-2
+```
+Add descriptions in the ## Sources section at the end of your page, not in the frontmatter.
+
+See `../CONTRIBUTING.md` for full contributor guidelines and `conventions.md` for formatting rules.
