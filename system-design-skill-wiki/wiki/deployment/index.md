@@ -16,18 +16,21 @@ sources: []
 
 **Quick reference:** Containers vs VMs? Kubernetes vs managed services? Single-region or multi-region?
 
-*(In progress; contribute a page!)*
+This index links to all deployment strategies, tools, and patterns in the `deployment/` domain.
+
+## Core technologies
+
+- [[containers|Containers]] — Docker/containerization, when it fits vs VMs/serverless
+- [[kubernetes|Kubernetes]] — container orchestration, when to adopt, operational complexity
+- [[serverless|Serverless]] — FaaS platforms (Lambda, Cloud Functions), cost model, vendor lock-in
+- [[deployment-patterns|Deployment patterns]] — blue-green, canary, rolling, shadow, feature flags
 
 ## Topics to add
 
-- Containers (Docker) vs VMs
-- Kubernetes vs cloud-managed (ECS, GKE, AKS)
-- Serverless (Lambda, Cloud Functions) vs containers
 - Single-region vs multi-region
-- Blue-green deployments
-- Canary releases
 - Load balancing strategies
 - DNS + failover
+- Infrastructure-as-Code tools (Terraform, CloudFormation)
 
 ## Related domains
 
