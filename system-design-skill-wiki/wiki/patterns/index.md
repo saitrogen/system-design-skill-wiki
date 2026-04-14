@@ -80,6 +80,7 @@ This index links to all architecture patterns + trade-offs.
 
 - [[discord-message-storage|Discord message storage]] — partitioning strategy (partition by channel + time bucket)
 - [[notion-postgres-sharding|Notion Postgres sharding]] — scaling a monolithic database horizontally
+- [[uber-sharding-strategy|Uber sharding strategy]] — sharding abstraction layer for MySQL at scale
 
 ## Raw sources (external primers)
 

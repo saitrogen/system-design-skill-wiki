@@ -1,49 +1,23 @@
+# ⚠️ DEPRECATED: Use Proper Templates Instead
+
+This file is **deprecated** and kept only for backwards compatibility with old documentation references.
+
+## Use These Templates Instead:
+
+- **For tool/technology pages:** `tool-template.md`
+  - Example: PostgreSQL, Cassandra, Redis, Kafka
+  - Structure: What it is → When it fits → Gotchas → Trade-offs → Comparisons
+
+- **For decision/trade-off pages:** `decision-template.md`
+  - Example: "Kafka vs RabbitMQ", "When to leave MongoDB"
+  - Structure: What this is → When to use each → Trade-offs → Tipping point → Real examples
+
+- **For guidance:** See `schema/index.md` for full template guidance
+
+## Removed: Old Template Content
+
+The old mixed template has been removed. All new pages should use either `tool-template.md` or `decision-template.md`.
+
 ---
-name: "<page name>"
-type: decision
-domain: "<domain>"
-tags:
-  - <tag>
-aliases: []
-last_updated: 2026-04-11
-sources: []
----
 
-# <page name>
-
-Update `last_updated` when you make meaningful edits.
-
-## TL;DR
-1–3 sentences: what to do, and why.
-
-## Problem
-What decision, trade-off, comparison, or design question does this page answer?
-
-## Context
-- Workload shape:
-- Constraints:
-- Non-goals:
-
-## Decision drivers
-- <driver>
-
-## Options
-| Option | When it fits | Trade-offs | Operational notes |
-| --- | --- | --- | --- |
-| <option> | <fit> | <trade-offs> | <ops> |
-
-## Recommendation
-- <recommended option>
-- <why>
-
-## Consequences
-- Positive:
-- Negative:
-- Follow-ups / mitigations:
-
-## Related
-- `\[\[some-page-slug|Some related page\]\]`
-
-## Sources
-- <url> — what you used it for
-
+See `../CONTRIBUTING.md` for full contributor guidelines.

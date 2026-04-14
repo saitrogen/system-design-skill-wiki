@@ -185,8 +185,10 @@ Agent workflow:
 
 ### Schema reference
 
-See `/schema/` for:
-- `entry-template.md` — template for new pages
+See `schema/` for:
+- `tool-template.md` — template for tool/technology pages
+- `decision-template.md` — template for decision/trade-off pages
+- `index.md` — schema guidance
 - `conventions.md` — naming, linking, sourcing rules
 - `page-types.md` — full description of page types
 - `tags.md` — canonical tag registry
@@ -311,9 +313,9 @@ All pages link to primary sources. An agent reading a page should be able to:
 
 ## Quick Links (for agents + humans)
 
-- **Start here:** `wiki/wiki-home.md` (map of content)
-- **All domains:** `wiki/databases/index.md`, `wiki/queues/index.md`, `wiki/patterns/index.md`, etc.
+- **Start here:** `wiki/index.md` (complete map of all pages)
+- **By domain:** `wiki/databases/index.md`, `wiki/queues/index.md`, `wiki/caching/index.md`, `wiki/deployment/index.md`, `wiki/patterns/index.md`, `wiki/case-summaries/index.md`
 - **Case studies:** `wiki/case-summaries/index.md`
-- **Schema guide:** `schema/_index.md`
+- **Schema guide:** `schema/index.md`
 - **Contributing:** `CONTRIBUTING.md`
 - **Tag registry:** `schema/tags.md`

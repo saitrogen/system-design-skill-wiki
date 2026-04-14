@@ -11,7 +11,7 @@ tags:
   - pub-sub
   - idempotency
 aliases: ["EDA", "Event-Driven Architecture"]
-last_updated: 2026-04
+last_updated: 2026-04-11
 sources:
   - ["Best Practices for Monitoring Event-Driven Architectures (Datadog)", "https://www.datadoghq.com/blog/monitor-event-driven-architectures/"]
   - ["Event-Driven Architecture: The Hard Parts (Three Dots Labs)", "https://threedots.tech/episode/event-driven-architecture/"]

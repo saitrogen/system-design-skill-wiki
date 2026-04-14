@@ -70,16 +70,17 @@ You want to document when PostgreSQL is a good fit, its gotchas, and trade-offs.
    - Example: `wiki/databases/postgresql.md`, `wiki/queues/kafka.md`
    - Use the **official slug** (not a marketing name)
    - Kebab-case, lowercase
-2. Copy the frontmatter from `schema/entry-template.md`
+2. Copy the frontmatter and sections from `schema/tool-template.md`
    - Set `type: tool`
    - Set `domain: <databases|queues|patterns|etc.>`
-3. Fill the sections:
+3. Fill the sections (from tool-template.md):
    - **What it is / what it optimizes for:** One sentence on what problem it solves
    - **When it fits:** Concrete use cases
-   - **When NOT to use:** Be specific about failure modes
+   - **When it doesn't fit:** Be specific about failure modes
    - **Operational gotchas:** Things that bite you at scale
-   - **Trade-offs table:** Option A vs B vs C (include trade-offs + costs)
-   - **Real-world examples:** Link to case studies
+   - **Trade-offs:** What it sacrifices for what it does well
+   - **Comparisons table:** vs competing tools (when it wins / loses)
+   - **Real-world example:** Link to case studies
    - **Related:** Link to other tools + decision pages
 4. Add at least one external source
 5. Add wikilinks (`[[slug|Display Name]]`) to related pages
@@ -101,34 +102,27 @@ You want to document when PostgreSQL is a good fit, its gotchas, and trade-offs.
 
 ### 3. Add a decision page (advanced)
 
-You want to document a specific trade-off: "When should we leave MongoDB?" or "Cassandra vs PostgreSQL for time-series data?"
+You want to document a specific trade-off: "When should we leave MongoDB?" or "Kafka vs RabbitMQ for event streams?"
 
 **Steps:**
 
 1. Create `wiki/<domain>/<decision-slug>.md`
-   - Example: `when-to-leave-mongodb.md`, `cassandra-vs-postgres.md`
+   - Example: `when-to-leave-mongodb.md`, `kafka-vs-rabbitmq.md`
    - Kebab-case, lowercase
-2. Copy the frontmatter from `schema/entry-template.md`
+2. Copy the frontmatter and sections from `schema/decision-template.md`
    - Set `type: decision`
    - Set `domain: <databases|queues|patterns|etc.>`
-3. Fill the sections:
-   - **TL;DR:** What should you do, and why? 1–3 sentences.
-   - **Problem:** What decision or trade-off does this page answer?
-   - **Context:**
-     - Workload shape: read-heavy? write-heavy? mixed?
-     - Constraints: latency requirements? consistency requirements? ops budget?
-     - Non-goals: what doesn't matter for this decision
-   - **Decision drivers:** What signals tell you it's time to decide? (e.g., "when working set > RAM")
-   - **Options table:** For each option:
-     - When it fits (workload, constraints)
-     - Trade-offs (cost, complexity, operational burden)
-     - Operational notes (how to run it)
-   - **Recommendation:** Which option(s) make sense and why
-   - **Consequences:**
-     - Positive outcomes
-     - Negative outcomes (what you're sacrificing)
-     - Follow-ups / mitigations (what to do after you decide)
-4. Add at least one external source (a blog post, paper, or link to primary source)
+3. Fill the sections (from decision-template.md):
+   - **What this is:** Clear intro on why this decision matters
+   - **When to use [Option A]:** Concrete requirements for Option A
+   - **When to use [Option B]:** Concrete requirements for Option B
+   - **When NOT to use:** Pitfalls and edge cases
+   - **Trade-offs table:** Comparison matrix (dimensions, behavior for each option)
+   - **The tipping point:** The single-most decisive factor(s) for each option
+   - **Pairs well with:** Related patterns and complementary tools
+   - **Real-world examples:** Companies that chose each option (with case study links)
+   - **Related:** Links to detailed tool pages
+4. Add at least one external source (blog post, paper, primary source)
 5. Add wikilinks to:
    - The tool pages you're comparing
    - Related decision pages
@@ -285,9 +279,11 @@ When you submit a page (via pull request or GitHub issue):
 
 ## Help
 
-- Questions about structure? Check `schema/conventions.md`
-- Want to see a page type? Check `schema/page-types.md`
-- Looking for tags? Check `schema/tags.md`
-- Need a template? Copy `schema/entry-template.md`
+- **Which template should I use?** Check `schema/_index.md` for guidance
+- **Adding a tool/technology page?** Copy `schema/tool-template.md`
+- **Adding a decision comparison page?** Copy `schema/decision-template.md`
+- **Questions about structure?** Check `schema/conventions.md`
+- **Want to see a page type?** Check `schema/page-types.md`
+- **Looking for tags?** Check `schema/tags.md`
 
 Thank you for contributing!

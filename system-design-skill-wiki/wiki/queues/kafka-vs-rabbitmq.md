@@ -1,5 +1,5 @@
 ---
-name: "When to Use Kafka vs RabbitMQ"
+name: When to Use Kafka vs RabbitMQ
 type: decision
 domain: queues
 tags:
@@ -9,11 +9,13 @@ tags:
   - event-streaming
   - task-queue
   - trade-offs
-aliases: ["Kafka vs RabbitMQ", "Kafka or RabbitMQ Decision"]
-last_updated: 2026-04
+aliases:
+  - Kafka vs RabbitMQ
+  - Kafka or RabbitMQ Decision
+last_updated: 2026-04-11
 sources:
-  - ["Kafka vs RabbitMQ: How to Know Which One to Use (Hello Interview)", "https://www.hellointerview.com/blog/kafka-vs-rabbitmq"]
-  - ["Apache Kafka vs. RabbitMQ: Differences & Comparison (GitHub/AutoMQ)", "https://github.com/AutoMQ/automq/wiki/Apache-Kafka-vs.-RabbitMQ:-Differences-&-Comparison"]
+  - https://www.hellointerview.com/blog/kafka-vs-rabbitmq
+  - https://github.com/AutoMQ/automq/wiki/Apache-Kafka-vs.-RabbitMQ:-Differences-&-Comparison
 ---
 
 ## What this is

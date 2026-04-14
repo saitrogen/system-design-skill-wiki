@@ -11,10 +11,10 @@ tags:
   - persistence
   - data-structures
 aliases: ["Redis Cache", "Redis DB"]
-last_updated: 2026-04
+last_updated: 2026-04-11
 sources:
-  - ["Redis Persistence and Durability: RDB Snapshots & AOF (Redis.io)", "https://redis.io/tutorials/operate/redis-at-scale/persistence-and-durability/"]
-  - ["Redis Persistence Explained: AOF & RDB (DEV Community)", "https://dev.to/leapcell/redis-persistence-explained-aof-rdb-1i23"]
+  - https://redis.io/tutorials/operate/redis-at-scale/persistence-and-durability/
+  - https://dev.to/leapcell/redis-persistence-explained-aof-rdb-1i23
 ---
 
 ## What this is
