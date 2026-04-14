@@ -9,7 +9,7 @@
 - Example agent prompt showing decision brief structure
 - When to use (and not use) this skill
 
-**Location:** `/home/ashiqu/Documents/projects-vault/system-design-skill-wiki/SKILL.md`
+**Location:** `system-design-skill-wiki/SKILL.md`
 
 ### 2. **Domain index.md files** (navigation & structure)
 Created or enhanced index pages for all core domains:
@@ -24,13 +24,13 @@ Created or enhanced index pages for all core domains:
 
 **Why:** Domain indexes give agents a stable entry point. Each lists all pages in that domain + cross-domain links + quick "by problem" lookup.
 
-### 3. **Updated wiki-home.md** (main entry point)
+### 3. **Updated wiki/index.md** (main entry point)
 Clear navigation for both humans and agents.
 - Links to all domain indexes
 - Quick Q&A examples
 - How to search + contribute
 
-**Location:** `wiki/wiki-home.md`
+**Location:** `system-design-skill-wiki/wiki/index.md`
 
 ### 4. **Comprehensive CONTRIBUTING.md**
 Replaced the minimal version with:
@@ -41,7 +41,7 @@ Replaced the minimal version with:
 - **Tag registration workflow**
 - **Examples** linking to existing pages
 
-**Location:** `CONTRIBUTING.md`
+**Location:** `system-design-skill-wiki/CONTRIBUTING.md`
 
 ### 5. **Design document** (this document's companion)
 Answers the 6 strategic questions:
@@ -52,7 +52,7 @@ Answers the 6 strategic questions:
 5. **Q5: Human vs agent interaction** — Two different workflows
 6. **Q6: Governance & versioning** — Quality review, stable references, maintenance
 
-**Location:** `/home/ashiqu/Documents/projects-vault/DESIGN.md`
+**Location:** (archived — content consolidated into other documentation)
 
 ---
 
@@ -89,7 +89,7 @@ grep -r "type: decision" wiki/
 
 ### For humans (Obsidian)
 
-**Entry point:** `wiki/wiki-home.md` (MOC)
+**Entry point:** `system-design-skill-wiki/wiki/index.md` (MOC)
 ```
 HUMAN: Opens Obsidian
 ↓
@@ -128,7 +128,7 @@ system-design-skill-wiki/
 │   ├── patterns.md                    # (exists)
 │   └── ...
 ├── wiki/
-│   ├── wiki-home.md                   # Main entry point ← UPDATED
+│   ├── index.md                       # Main entry point ← UPDATED
 │   ├── databases/
 │   │   ├── index.md                   # Domain entry ← CREATED
 │   │   ├── postgresql.md              # (exists)
@@ -268,31 +268,31 @@ class SystemDesignSkill:
 ## File locations for reference
 
 **Main documents:**
-- `/home/ashiqu/Documents/projects-vault/DESIGN.md` — Strategic Q&A document
-- `/home/ashiqu/Documents/projects-vault/system-design-skill-wiki/SKILL.md` — Agent integration guide
-- `/home/ashiqu/Documents/projects-vault/system-design-skill-wiki/CONTRIBUTING.md` — Contributor guide
+- `system-design-skill-wiki/SKILL.md` — Agent integration guide
+- `system-design-skill-wiki/CONTRIBUTING.md` — Contributor guide
+- `CONTRIBUTING.md` — Project-level contributor guide
 
 **Navigation:**
-- `/home/ashiqu/Documents/projects-vault/system-design-skill-wiki/wiki/wiki-home.md` — Main entry point
+- `system-design-skill-wiki/wiki/index.md` — Main entry point
 
 **Domain indexes:**
-- `/home/ashiqu/Documents/projects-vault/system-design-skill-wiki/wiki/databases/index.md`
-- `/home/ashiqu/Documents/projects-vault/system-design-skill-wiki/wiki/queues/index.md`
-- `/home/ashiqu/Documents/projects-vault/system-design-skill-wiki/wiki/patterns/index.md`
-- `/home/ashiqu/Documents/projects-vault/system-design-skill-wiki/wiki/case-summaries/index.md`
-- `/home/ashiqu/Documents/projects-vault/system-design-skill-wiki/wiki/caching/index.md`
-- `/home/ashiqu/Documents/projects-vault/system-design-skill-wiki/wiki/deployment/index.md`
-- `/home/ashiqu/Documents/projects-vault/system-design-skill-wiki/wiki/observability/index.md`
+- `system-design-skill-wiki/wiki/databases/index.md`
+- `system-design-skill-wiki/wiki/queues/index.md`
+- `system-design-skill-wiki/wiki/patterns/index.md`
+- `system-design-skill-wiki/wiki/case-summaries/index.md`
+- `system-design-skill-wiki/wiki/caching/index.md`
+- `system-design-skill-wiki/wiki/deployment/index.md`
+- `system-design-skill-wiki/wiki/observability/index.md`
 
 ---
 
 ## Summary
 
-The "Second Brain" skill is now structured to serve **two users equally well**:
+The System Design Skill Wiki is now structured to serve **two users equally well**:
 
-1. **Humans in Obsidian** → browse via `wiki-home.md` → navigate domains → read linked pages
+1. **Humans in Obsidian** → browse via `system-design-skill-wiki/wiki/index.md` → navigate domains → read linked pages
 2. **Agents via MCP** → query by tag → load domain index → return structured decision brief
 
-The foundation is solid: naming conventions, template structure, sourcing policy, and navigation are all in place. Content seeding is underway (core domains populated; others have skeletons). The barrier to contribution is low: CONTRIBUTING.md has clear instructions.
+The foundation is solid: naming conventions, template structure, sourcing policy, and navigation are all in place. Content seeding is complete (31 pages across 7 domains). The barrier to contribution is low: CONTRIBUTING.md and MAINTAINERS.md have clear instructions.
 
-Ready for agents to start querying + humans to start adding content!
+Ready for merge to master and for agents to start querying!
