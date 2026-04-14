@@ -20,6 +20,12 @@ This guide is for contributors maintaining the System Design Skill Wiki.
 - MAINTAINERS.md — This file (development standards)
 - STRUCTURE.md — Repository architecture details
 
+**Local development only** (not committed):
+- `.agents/` — Agent skill testing and integration artifacts
+- `.obsidian/` — Obsidian vault configuration
+- `test-runs/`, `agent-sessions/` — Testing artifacts
+- See `.gitignore` for complete list of ignored local files
+
 ## Adding New Content
 
 ### Before You Start
