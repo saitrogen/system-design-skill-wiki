@@ -9,7 +9,7 @@
 - Example agent prompt showing decision brief structure
 - When to use (and not use) this skill
 
-**Location:** `system-design-skill-wiki/SKILL.md`
+**Location:** `SKILL.md`
 
 ### 2. **Domain index.md files** (navigation & structure)
 Created or enhanced index pages for all core domains:
@@ -30,7 +30,7 @@ Clear navigation for both humans and agents.
 - Quick Q&A examples
 - How to search + contribute
 
-**Location:** `system-design-skill-wiki/wiki/index.md`
+**Location:** `wiki/index.md`
 
 ### 4. **Comprehensive CONTRIBUTING.md**
 Replaced the minimal version with:
@@ -41,7 +41,7 @@ Replaced the minimal version with:
 - **Tag registration workflow**
 - **Examples** linking to existing pages
 
-**Location:** `system-design-skill-wiki/CONTRIBUTING.md`
+**Location:** `CONTRIBUTING.md`
 
 ### 5. **Design document** (this document's companion)
 Answers the 6 strategic questions:
@@ -89,7 +89,7 @@ grep -r "type: decision" wiki/
 
 ### For humans (Obsidian)
 
-**Entry point:** `system-design-skill-wiki/wiki/index.md` (MOC)
+**Entry point:** `wiki/index.md` (MOC)
 ```
 HUMAN: Opens Obsidian
 ↓
@@ -111,7 +111,7 @@ DISCOVER: Decision landscape via link graph
 ## Folder structure (final)
 
 ```
-system-design-skill-wiki/
+
 ├── SKILL.md                           # Agent integration guide ← UPDATED
 ├── CONTRIBUTING.md                    # How to contribute ← UPDATED
 ├── README.md                          # Project overview
@@ -268,21 +268,21 @@ class SystemDesignSkill:
 ## File locations for reference
 
 **Main documents:**
-- `system-design-skill-wiki/SKILL.md` — Agent integration guide
-- `system-design-skill-wiki/CONTRIBUTING.md` — Contributor guide
+- `SKILL.md` — Agent integration guide
+- `CONTRIBUTING.md` — Contributor guide
 - `CONTRIBUTING.md` — Project-level contributor guide
 
 **Navigation:**
-- `system-design-skill-wiki/wiki/index.md` — Main entry point
+- `wiki/index.md` — Main entry point
 
 **Domain indexes:**
-- `system-design-skill-wiki/wiki/databases/index.md`
-- `system-design-skill-wiki/wiki/queues/index.md`
-- `system-design-skill-wiki/wiki/patterns/index.md`
-- `system-design-skill-wiki/wiki/case-summaries/index.md`
-- `system-design-skill-wiki/wiki/caching/index.md`
-- `system-design-skill-wiki/wiki/deployment/index.md`
-- `system-design-skill-wiki/wiki/observability/index.md`
+- `wiki/databases/index.md`
+- `wiki/queues/index.md`
+- `wiki/patterns/index.md`
+- `wiki/case-summaries/index.md`
+- `wiki/caching/index.md`
+- `wiki/deployment/index.md`
+- `wiki/observability/index.md`
 
 ---
 
@@ -290,7 +290,7 @@ class SystemDesignSkill:
 
 The System Design Skill Wiki is now structured to serve **two users equally well**:
 
-1. **Humans in Obsidian** → browse via `system-design-skill-wiki/wiki/index.md` → navigate domains → read linked pages
+1. **Humans in Obsidian** → browse via `wiki/index.md` → navigate domains → read linked pages
 2. **Agents via MCP** → query by tag → load domain index → return structured decision brief
 
 The foundation is solid: naming conventions, template structure, sourcing policy, and navigation are all in place. Content seeding is complete (31 pages across 7 domains). The barrier to contribution is low: CONTRIBUTING.md and MAINTAINERS.md have clear instructions.

@@ -23,35 +23,46 @@ Agents systematically navigate domain indexes to find answers.
 
 See `system-design-skill-wiki/SKILL.md` for agent integration guide.
 
-## For Contributors
+## Install This Skill
 
-Add new pages, case studies, or patterns. See CONTRIBUTING.md for process.
+```bash
+npx skills add saitron/system-design-skill-wiki
+```
 
-## Repository Structure
+## For Contributors & Maintainers
+
+- **How to contribute**: See [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md)
+- **Development standards**: See [`docs/MAINTAINERS.md`](docs/MAINTAINERS.md)
+- **Repository architecture**: See [`docs/STRUCTURE.md`](docs/STRUCTURE.md)
+
+## Skill Contents
 
 ```
-├── README.md (this file)
-├── CONTRIBUTING.md (how to contribute)
-├── MAINTAINERS.md (development standards)
-├── LICENSE
-└── system-design-skill-wiki/ (the skill)
-    ├── SKILL.md (agent specification)
-    ├── wiki/ (31+ decision pages by domain)
-    │   ├── index.md (main entry)
-    │   ├── databases/, queues/, caching/, deployment/, patterns/, case-summaries/
-    ├── schema/ (templates + conventions)
-    │   ├── tool-template.md
-    │   ├── decision-template.md
-    │   ├── index.md
-    │   ├── conventions.md
-    │   └── tags.md
-    └── raw-sources/ (external reading lists)
+SKILL.md (agent specification)
+wiki/ (31+ decision pages by domain)
+├── index.md (main entry)
+├── databases/ (6 tools + 3 decisions)
+├── queues/ (2 tools + 1 decision)
+├── caching/ (3 tools)
+├── deployment/ (4 tools + 1 pattern)
+├── patterns/ (event-driven, log-based)
+└── case-summaries/ (Discord, Notion, Uber, Netflix)
+
+schema/ (templates + conventions)
+├── tool-template.md
+├── decision-template.md
+├── index.md (guidance)
+├── conventions.md
+└── tags.md (100+ registered tags)
+
+raw-sources/ (external reading lists)
+└── index.md
 ```
 
 ## Quick Links
 
-- **Agent guide**: `system-design-skill-wiki/SKILL.md`
-- **Contributing**: `CONTRIBUTING.md`
-- **Development standards**: `MAINTAINERS.md`
-- **Main wiki entry**: `system-design-skill-wiki/wiki/index.md`
-- **Schema guidance**: `system-design-skill-wiki/schema/index.md`
+- **Agent guide**: `SKILL.md`
+- **Main wiki entry**: `wiki/index.md`
+- **Schema guidance**: `schema/index.md`
+- **Contributing**: `docs/CONTRIBUTING.md`
+- **Development standards**: `docs/MAINTAINERS.md`

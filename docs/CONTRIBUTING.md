@@ -28,7 +28,7 @@ You found a great blog post about a company's system design decision. You want t
 2. Create `wiki/case-summaries/<company>-<topic>.md`
    - Example: `discord-message-storage.md`, `notion-postgres-sharding.md`
    - Use kebab-case (lowercase, hyphens between words)
-3. Copy the frontmatter from `schema/entry-template.md`
+3. Copy the frontmatter from a similar case summary page (or use the template below)
    - Set `type: case-summary`
    - Set `domain: case-summaries`
    - Add any new tags to `schema/tags.md` **first**
@@ -235,7 +235,7 @@ If you notice pages don't fit existing domains:
 
 1. Create the folder: `wiki/<new-domain>/`
 2. Create `wiki/<new-domain>/index.md` (use the index template above)
-3. Add a link from `wiki/wiki-home.md`
+3. Add a link from `wiki/index.md`
 4. Add the domain to `schema/tags.md`
 
 ---
@@ -279,11 +279,10 @@ When you submit a page (via pull request or GitHub issue):
 
 ## Help
 
-- **Which template should I use?** Check `schema/_index.md` for guidance
+- **Which template should I use?** Check `schema/index.md` for guidance
 - **Adding a tool/technology page?** Copy `schema/tool-template.md`
 - **Adding a decision comparison page?** Copy `schema/decision-template.md`
 - **Questions about structure?** Check `schema/conventions.md`
-- **Want to see a page type?** Check `schema/page-types.md`
 - **Looking for tags?** Check `schema/tags.md`
 
 Thank you for contributing!

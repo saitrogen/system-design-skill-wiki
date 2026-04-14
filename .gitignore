@@ -1,1 +1,37 @@
+# Local development
 .obsidian
+.DS_Store
+.env
+.env.local
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Dependencies
+node_modules/
+package-lock.json
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+.pytest_cache/
+
+# Agent/Skill testing (local only)
+.agent-test/
+.skills-cache/
+test-runs/
+agent-sessions/
+skills-test-output/
+
+# Temporary
+*.tmp
+*.bak
+*.log

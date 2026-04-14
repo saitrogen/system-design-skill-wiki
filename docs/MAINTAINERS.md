@@ -4,13 +4,8 @@ This guide is for contributors maintaining the System Design Skill Wiki.
 
 ## Repository Structure
 
-**Root level** (you are here):
-- Project-level documentation
-- Contributing guidelines
-- Development standards
-
-**system-design-skill-wiki/** (the skill):
-- SKILL.md — Agent integration spec (don't modify without updating CONTRIBUTING.md + schema/)
+**Root level** (the skill):
+- SKILL.md — Agent integration spec (don't modify without updating docs/CONTRIBUTING.md + schema/)
 - wiki/ — Decision pages (31 current pages across 7 domains)
 - schema/ — Templates + conventions
   - tool-template.md — Template for tool/technology pages
@@ -18,15 +13,21 @@ This guide is for contributors maintaining the System Design Skill Wiki.
   - conventions.md — Naming, frontmatter, sourcing, writing style standards
   - tags.md — Canonical tag registry
   - index.md — Guidance on which template to use
+- raw-sources/ — External reading lists and curated links
+
+**docs/** (maintainer documentation):
+- CONTRIBUTING.md — Guidelines for contributors
+- MAINTAINERS.md — This file (development standards)
+- STRUCTURE.md — Repository architecture details
 
 ## Adding New Content
 
 ### Before You Start
-1. Read `system-design-skill-wiki/schema/conventions.md` (complete guide)
-2. Verify your tag exists in `system-design-skill-wiki/schema/tags.md`, add if missing
+1. Read `schema/conventions.md` (complete guide)
+2. Verify your tag exists in `schema/tags.md`, add if missing
 3. Use the correct template:
-   - Tool page? → `system-design-skill-wiki/schema/tool-template.md`
-   - Decision page? → `system-design-skill-wiki/schema/decision-template.md`
+   - Tool page? → `schema/tool-template.md`
+   - Decision page? → `schema/decision-template.md`
 
 ### When Submitting
 - [ ] Frontmatter complete (name, type, domain, tags, last_updated, sources)
@@ -119,18 +120,18 @@ Run these checks:
 
 ```bash
 # Check for unregistered tags
-grep -r "tags:" system-design-skill-wiki/wiki/ | grep -v schema/tags.md | \
+grep -r "tags:" wiki/ | grep -v schema/tags.md | \
   cut -d: -f3- | tr ',' '\n' | sort -u | \
-  while read tag; do grep -q "$tag" system-design-skill-wiki/schema/tags.md || echo "Unregistered: $tag"; done
+  while read tag; do grep -q "$tag" schema/tags.md || echo "Unregistered: $tag"; done
 
 # Check for broken wikilinks (escaped pipes)
-grep -r '\[\[[^]]*\\|' system-design-skill-wiki/wiki/
+grep -r '\[\[[^]]*\\|' wiki/
 
 # Check date format (should be YYYY-MM-DD)
-grep -r "last_updated: [^0-9]" system-design-skill-wiki/wiki/
+grep -r "last_updated: [^0-9]" wiki/
 
 # Check for mixed case in wikilinks
-grep -r '\[\[[A-Z]' system-design-skill-wiki/wiki/ | grep -v 'Case\|Decision\|Database\|Index'
+grep -r '\[\[[A-Z]' wiki/ | grep -v 'Case\|Decision\|Database\|Index'
 ```
 
 ## Release Process
@@ -145,4 +146,4 @@ grep -r '\[\[[A-Z]' system-design-skill-wiki/wiki/ | grep -v 'Case\|Decision\|Da
 
 ## Questions?
 
-See `CONTRIBUTING.md` for contributor guidelines, or `system-design-skill-wiki/schema/conventions.md` for detailed standards.
+See `docs/CONTRIBUTING.md` for contributor guidelines, or `schema/conventions.md` for detailed standards.
