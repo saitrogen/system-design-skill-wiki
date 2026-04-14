@@ -58,4 +58,9 @@ tags:
   - tag1
   - nested/tag2
 ---
+``` 
+```yaml
+sources:
+  - https://example.com/article-1
+  - https://example.com/article-2
 ```
