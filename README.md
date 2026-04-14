@@ -1,33 +1,57 @@
 <img width="1024" height="600" alt="image" src="https://github.com/user-attachments/assets/b9d6a626-399b-4b01-b8ad-af4343dace32" />
 
-# System Design skill Wiki
 
-Obsidian-friendly notes on system design decisions as **explicit trade-offs**. The goal is not encyclopedic coverage; it’s to capture *decision drivers, options, and consequences* with links to primary sources.
+Queryable knowledge base of system design decisions with explicit trade-offs, operational gotchas, and real case studies.
 
+## What is this?
 
-## Repository layout
+A macro skill for agents planning system architecture. Not a tutorial or reference; a decision-support system that captures:
+- **What it optimizes for**: Each technology's core identity
+- **When it fits/doesn't fit**: Concrete signals and anti-patterns
+- **Operational reality**: Production gotchas, not theory
+- **Real examples**: Discord, Netflix, Uber, Notion case studies
+- **Trade-offs**: What you win vs what you sacrifice
 
-- `raw-sources/` — curated indexes of external posts/papers. Prefer primary sources; write only short, original notes.
-- `schema/` — templates + conventions for consistent pages.
-- `wiki/` — the actual pages, organized by domain (`databases/`, `queues/`, `patterns/`, `case-summaries/`).
+## For Agents
 
-## Seed pages
+Use this skill when users ask architectural questions:
+- "Should we use X or Y?"
+- "What database fits [workload]?"
+- "Has anyone done [architecture pattern]?"
 
-- `wiki/databases/when-to-leave-mongodb.md`
-- `wiki/databases/cassandra.md`
-- `wiki/databases/scylladb.md`
-- `wiki/case-summaries/discord-message-storage.md`
+Agents systematically navigate domain indexes to find answers.
 
-## How to contribute
+See `system-design-skill-wiki/SKILL.md` for agent integration guide.
 
-1. Pick (or create) the right domain folder under `wiki/`.
-2. Start from `schema/entry-template.md`.
-3. Fill the required frontmatter (including `aliases`, even if empty).
-4. Add 1+ `Related` wikilinks so pages are navigable.
-5. Add/curate links in `raw-sources/` when you discover great primary material.
+## For Contributors
 
-## Sourcing policy
+Add new pages, case studies, or patterns. See CONTRIBUTING.md for process.
 
-- Don’t copy/paste large chunks from external sources.
-- Paraphrase briefly and link to the original.
-- Keep quotes short and attributed.
+## Repository Structure
+
+```
+├── README.md (this file)
+├── CONTRIBUTING.md (how to contribute)
+├── MAINTAINERS.md (development standards)
+├── LICENSE
+└── system-design-skill-wiki/ (the skill)
+    ├── SKILL.md (agent specification)
+    ├── wiki/ (31+ decision pages by domain)
+    │   ├── index.md (main entry)
+    │   ├── databases/, queues/, caching/, deployment/, patterns/, case-summaries/
+    ├── schema/ (templates + conventions)
+    │   ├── tool-template.md
+    │   ├── decision-template.md
+    │   ├── index.md
+    │   ├── conventions.md
+    │   └── tags.md
+    └── raw-sources/ (external reading lists)
+```
+
+## Quick Links
+
+- **Agent guide**: `system-design-skill-wiki/SKILL.md`
+- **Contributing**: `CONTRIBUTING.md`
+- **Development standards**: `MAINTAINERS.md`
+- **Main wiki entry**: `system-design-skill-wiki/wiki/index.md`
+- **Schema guidance**: `system-design-skill-wiki/schema/index.md`
