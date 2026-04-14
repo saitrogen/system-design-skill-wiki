@@ -57,18 +57,18 @@ Docker/containers package application code, dependencies, and runtime into a sel
 
 | Compared to | Containers tend to win when… | Containers tend to lose when… |
 | --- | --- | --- |
-| [[virtual-machines\|VMs]] | You need fast startup and high-density packing | You need strong isolation or hardware-level virtualization |
-| [[serverless\|Serverless]] | You need fine-grained control over environment or long-running processes | You have bursty traffic and want to pay only for idle time |
+| [[virtual-machines|VMs]] | You need fast startup and high-density packing | You need strong isolation or hardware-level virtualization |
+| [[serverless|Serverless]] | You need fine-grained control over environment or long-running processes | You have bursty traffic and want to pay only for idle time |
 
 ## Real-world example
 
-- **Netflix:** [[netflix-container-adoption\|Adopted Docker for micro-services fleet]] — reduced deployment complexity and enabled rapid team iteration; moved orchestration to Kubernetes as fleet grew.
+- **Netflix:** Adopted Docker for micro-services fleet — reduced deployment complexity and enabled rapid team iteration; moved orchestration to Kubernetes as fleet grew.
 
 ## Related
 
-- [[kubernetes\|Kubernetes]]
-- [[serverless\|Serverless]]
-- [[deployment-patterns\|Deployment patterns]]
+- [[kubernetes|Kubernetes]]
+- [[serverless|Serverless]]
+- [[deployment-patterns|Deployment patterns]]
 
 ## Sources
 

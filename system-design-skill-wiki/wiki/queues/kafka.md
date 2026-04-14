@@ -10,7 +10,7 @@ tags:
   - consumer-groups
   - throughput
 aliases: ["Kafka", "Apache Kafka"]
-last_updated: 2026-04
+last_updated: 2026-04-11
 sources:
   - ["Kafka at LinkedIn: Current and Future", "https://engineering.linkedin.com/kafka/kafka-linkedin-current-and-future"]
   - ["Kafka vs RabbitMQ: How to Know Which One to Use (Hello Interview)", "https://www.hellointerview.com/blog/kafka-vs-rabbitmq"]

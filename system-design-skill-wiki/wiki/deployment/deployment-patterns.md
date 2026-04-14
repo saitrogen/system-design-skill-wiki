@@ -59,11 +59,11 @@ Deployment patterns define strategies for rolling out new versions of services w
 
 | Pattern | Best for | Cost | Rollback speed | Complexity |
 | --- | --- | --- | --- | --- |
-| [[deployment-patterns\|Blue-green]] | Low-risk, critical services | High (2x infra) | Instant | Medium |
-| [[deployment-patterns\|Canary]] | High-traffic services, tight monitoring | Medium (1–2x infra) | Slow (10+ min) | High |
-| [[deployment-patterns\|Rolling]] | Cost-sensitive teams, stateless services | Low | Slow (10–30 min) | Low |
-| [[deployment-patterns\|Shadow]] | High-risk migrations, validation only | High (2x traffic) | N/A (no traffic switched) | High |
-| [[deployment-patterns\|Feature flags]] | Rapid iteration, frequent deploys | Low (no extra infra) | Very fast | Medium (code complexity) |
+| [[deployment-patterns|Blue-green]] | Low-risk, critical services | High (2x infra) | Instant | Medium |
+| [[deployment-patterns|Canary]] | High-traffic services, tight monitoring | Medium (1–2x infra) | Slow (10+ min) | High |
+| [[deployment-patterns|Rolling]] | Cost-sensitive teams, stateless services | Low | Slow (10–30 min) | Low |
+| [[deployment-patterns|Shadow]] | High-risk migrations, validation only | High (2x traffic) | N/A (no traffic switched) | High |
+| [[deployment-patterns|Feature flags]] | Rapid iteration, frequent deploys | Low (no extra infra) | Very fast | Medium (code complexity) |
 
 ## Real-world example
 
@@ -72,9 +72,9 @@ Deployment patterns define strategies for rolling out new versions of services w
 
 ## Related
 
-- [[containers\|Containers]]
-- [[kubernetes\|Kubernetes]]
-- [[serverless\|Serverless]]
+- [[containers|Containers]]
+- [[kubernetes|Kubernetes]]
+- [[serverless|Serverless]]
 
 ## Sources
 

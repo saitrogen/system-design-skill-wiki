@@ -42,7 +42,7 @@ sources: []
 
 | Compared to | This tool tends to win when… | This tool tends to lose when… |
 | --- | --- | --- |
-| [[other-tool\|Other Tool]] | Your workload is X | You need Y |
+| [[other-tool|Other Tool]] | Your workload is X | You need Y |
 
 ## Real-world example
 
@@ -50,8 +50,8 @@ sources: []
 
 ## Related
 
-- [[related-tool-1\|Related Tool 1]]
-- [[related-case-study\|Related Case Study]]
+- [[related-tool-1|Related Tool 1]]
+- [[related-case-study|Related Case Study]]
 
 ## Sources
 

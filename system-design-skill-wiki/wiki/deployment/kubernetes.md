@@ -59,8 +59,8 @@ Kubernetes (K8s) is a container orchestration platform that automates deployment
 
 | Compared to | Kubernetes tends to win when… | Kubernetes tends to lose when… |
 | --- | --- | --- |
-| [[containers\|Docker only]] | You need automated scaling and high availability | You have < 5 services and manual orchestration is fine |
-| [[serverless\|Serverless]] | You need precise control over runtime or have long-running processes | You have bursty traffic and want to pay only for execution time |
+| [[containers|Docker only]] | You need automated scaling and high availability | You have < 5 services and manual orchestration is fine |
+| [[serverless|Serverless]] | You need precise control over runtime or have long-running processes | You have bursty traffic and want to pay only for execution time |
 
 ## Real-world example
 
@@ -68,9 +68,9 @@ Kubernetes (K8s) is a container orchestration platform that automates deployment
 
 ## Related
 
-- [[containers\|Containers]]
-- [[serverless\|Serverless]]
-- [[deployment-patterns\|Deployment patterns]]
+- [[containers|Containers]]
+- [[serverless|Serverless]]
+- [[deployment-patterns|Deployment patterns]]
 
 ## Sources
 

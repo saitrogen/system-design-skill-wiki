@@ -61,8 +61,8 @@ Serverless platforms (AWS Lambda, Google Cloud Functions, Azure Functions) autom
 
 | Compared to | Serverless tends to win when… | Serverless tends to lose when… |
 | --- | --- | --- |
-| [[containers\|Containers]] | Bursty traffic, no need for always-on services, simple stateless functions | Always-on traffic, need for fine-grained control, complex multi-process workloads |
-| [[kubernetes\|Kubernetes]] | You want zero ops overhead and simple functions | You need control over runtime or long-running processes (> 15 min) |
+| [[containers|Containers]] | Bursty traffic, no need for always-on services, simple stateless functions | Always-on traffic, need for fine-grained control, complex multi-process workloads |
+| [[kubernetes|Kubernetes]] | You want zero ops overhead and simple functions | You need control over runtime or long-running processes (> 15 min) |
 
 ## Real-world example
 
@@ -71,9 +71,9 @@ Serverless platforms (AWS Lambda, Google Cloud Functions, Azure Functions) autom
 
 ## Related
 
-- [[containers\|Containers]]
-- [[kubernetes\|Kubernetes]]
-- [[deployment-patterns\|Deployment patterns]]
+- [[containers|Containers]]
+- [[kubernetes|Kubernetes]]
+- [[deployment-patterns|Deployment patterns]]
 
 ## Sources
 

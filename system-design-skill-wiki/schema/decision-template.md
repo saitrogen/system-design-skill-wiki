@@ -51,18 +51,18 @@ sources: []
 
 ## Pairs well with
 
-- [[related-pattern-1\|Related Pattern 1]] — architectural context
-- [[related-tool-1\|Related Tool 1]] — complementary technology
+- [[related-pattern-1|Related Pattern 1]] — architectural context
+- [[related-tool-1|Related Tool 1]] — complementary technology
 
 ## Real-world examples
 
-- **Company Name**: Why they chose Option A — link to [[case-study\|case study]] if available
-- **Company Name**: Why they chose Option B — link to [[case-study\|case study]] if available
+- **Company Name**: Why they chose Option A — link to [[case-study|case study]] if available
+- **Company Name**: Why they chose Option B — link to [[case-study|case study]] if available
 
 ## Related
 
-- [[option-a-detailed-page\|Option A (detailed)]]
-- [[option-b-detailed-page\|Option B (detailed)]]
+- [[option-a-detailed-page|Option A (detailed)]]
+- [[option-b-detailed-page|Option B (detailed)]]
 
 ## Sources
 

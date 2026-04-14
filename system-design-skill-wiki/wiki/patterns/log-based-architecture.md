@@ -12,7 +12,7 @@ tags:
   - immutable-log
   - derived-views
 aliases: ["Log as Source of Truth", "Append-Only Log Architecture", "Database Inside Out"]
-last_updated: 2026-04
+last_updated: 2026-04-11
 sources:
   - ["Turning the Database Inside-Out with Apache Samza (Martin Kleppmann)", "https://martin.kleppmann.com/2015/03/04/turning-the-database-inside-out.html"]
   - ["Turning the Database Inside Out Again (ZeroCopy/Streambased)", "https://blog.streambased.io/p/turning-the-database-inside-out-again"]
