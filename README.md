@@ -1,68 +1,97 @@
-<img width="1024" height="600" alt="image" src="https://github.com/user-attachments/assets/b9d6a626-399b-4b01-b8ad-af4343dace32" />
+![System Design Skill Wiki](https://github.com/user-attachments/assets/b9d6a626-399b-4b01-b8ad-af4343dace32)
 
+<p align="center">
+  <a href="#-the-problem">Problem</a> •
+  <a href="#-how-it-works">How It Works</a> •
+  <a href="#-install">Install</a> •
+  <a href="#-whats-inside">What's Inside</a> •
+  <a href="#-contribute">Contribute</a>
+</p>
 
-Queryable knowledge base of system design decisions with explicit trade-offs, operational gotchas, and real case studies.
+---
 
-## What is this?
+## 🎯 The Problem
 
-A macro skill for agents planning system architecture. Not a tutorial or reference; a decision-support system that captures:
-- **What it optimizes for**: Each technology's core identity
-- **When it fits/doesn't fit**: Concrete signals and anti-patterns
-- **Operational reality**: Production gotchas, not theory
-- **Real examples**: Discord, Netflix, Uber, Notion case studies
-- **Trade-offs**: What you win vs what you sacrifice
+Most developers aren't system architects.
 
-## For Agents
+They can write code, ship features, debug. But ask them *"should we use Cassandra or PostgreSQL?"* and they're guessing. They ship. They scale. They panic when it breaks.
 
-Use this skill when users ask architectural questions:
-- "Should we use X or Y?"
-- "What database fits [workload]?"
-- "Has anyone done [architecture pattern]?"
+Now imagine asking an AI agent the same question — it guesses too.
 
-Agents systematically navigate domain indexes to find answers.
+---
 
-See `SKILL.md` for agent integration guide.
+## ⚡ How It Works
 
-## Install This Skill
+A **macro skill for AI agents** that makes real architectural decisions. Not opinions. Not theory.
+
+When you ask an agent: *"We need to store 100M messages/day with <20ms latency"*
+
+The agent:
+```
+1. Loads wiki/databases/index.md
+2. Scans for "append-heavy, high-throughput"
+3. Reads Cassandra's trade-offs + gotchas
+4. Finds Discord's real case study
+5. Returns: "Cassandra. Why: scales linearly for append-heavy.
+   Watch: token rebalancing stalls at scale.
+   Real example: Discord migrated MongoDB → Cassandra → handled trillions."
+```
+
+**Real knowledge. Real decisions. No guessing.**
+
+---
+
+## 📦 Install
 
 ```bash
 npx skills add saitron/system-design-skill-wiki
 ```
 
-## For Contributors & Maintainers
+Works with Claude, Cursor, or any agent environment.
 
-- **How to contribute**: See [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md)
-- **Development standards**: See [`docs/MAINTAINERS.md`](docs/MAINTAINERS.md)
-- **Repository architecture**: See [`docs/STRUCTURE.md`](docs/STRUCTURE.md)
+---
 
-## Skill Contents
+## 🏗️ What's Inside
 
-```
-SKILL.md (agent specification)
-wiki/ (31+ decision pages by domain)
-├── index.md (main entry)
-├── databases/ (6 tools + 3 decisions)
-├── queues/ (2 tools + 1 decision)
-├── caching/ (3 tools)
-├── deployment/ (4 tools + 1 pattern)
-├── patterns/ (event-driven, log-based)
-└── case-summaries/ (Discord, Notion, Uber, Netflix)
+**31+ pages** across 7 domains:
 
-schema/ (templates + conventions)
-├── tool-template.md
-├── decision-template.md
-├── index.md (guidance)
-├── conventions.md
-└── tags.md (100+ registered tags)
+| Domain | Content | Example |
+|--------|---------|---------|
+| **Databases** | 6 tools + 3 decisions | PostgreSQL, Cassandra, MongoDB — when each breaks |
+| **Queues** | 2 tools + 1 decision | Kafka vs RabbitMQ — throughput vs simplicity |
+| **Caching** | 3 tools | Redis strategies, Memcached, distributed patterns |
+| **Deployment** | 4 tools + 1 pattern | Containers, Kubernetes, Serverless |
+| **Patterns** | 2 pages | Event-driven, log-based architecture |
+| **Case Studies** | 4 deep-dives | Discord, Notion, Uber, Netflix |
 
-raw-sources/ (external reading lists)
-└── index.md
-```
+**Each page includes:**
+- ✓ What it optimizes for (core identity)
+- ✓ When it fits (concrete signals)
+- ✓ When it fails (operational gotchas)
+- ✓ Real case studies (how it actually scaled)
+- ✓ Trade-offs (what you win vs sacrifice)
 
-## Quick Links
+---
 
-- **Agent guide**: `SKILL.md`
-- **Main wiki entry**: `wiki/index.md`
-- **Schema guidance**: `schema/index.md`
-- **Contributing**: `docs/CONTRIBUTING.md`
-- **Development standards**: `docs/MAINTAINERS.md`
+## 🚀 Quick Links
+
+- **For agents**: [`SKILL.md`](SKILL.md) — Integration guide + workflows
+- **For contributors**: [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md) — How to add pages
+- **For maintainers**: [`docs/MAINTAINERS.md`](docs/MAINTAINERS.md) — Development standards
+- **Main wiki**: [`wiki/index.md`](wiki/index.md) — All 31+ pages
+
+---
+
+## 🤝 Contribute
+
+See [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md) for:
+- How to add case studies
+- How to add tool pages
+- How to add decision pages
+- Sourcing policy (no copy-paste)
+
+---
+
+## 📄 License
+
+MIT — Use freely, contribute back.
