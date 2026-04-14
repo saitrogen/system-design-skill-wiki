@@ -21,7 +21,7 @@ Use this skill when users ask architectural questions:
 
 Agents systematically navigate domain indexes to find answers.
 
-See `system-design-skill-wiki/SKILL.md` for agent integration guide.
+See `SKILL.md` for agent integration guide.
 
 ## Install This Skill
 
