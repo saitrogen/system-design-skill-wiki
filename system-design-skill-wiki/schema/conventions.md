@@ -206,7 +206,7 @@ Start every new page by copying the appropriate template and filling in sections
 - **Decision page**: Copy `schema/decision-template.md`
 - **Case-summary page**: Use the “Case-summary” structure above as a guide
 - **Index page**: Use the “Index page” structure above as a guide
-- **For full guidance**: See `schema/index.md` and `schema/_index.md`
+- **For full guidance**: See `schema/index.md`
 
 ## Updating pages
 

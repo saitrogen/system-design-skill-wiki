@@ -76,9 +76,9 @@ Notion migrated from a single Postgres “monolith” to an application-sharded 
 - Ongoing distributed constraints:
   - Cross-shard transactions/joins are still hard; the architecture pushes you toward locality-friendly product and data-model choices.
 
-## Links to wiki pages
+## Related
 - [[postgresql|PostgreSQL]]
-- [[wiki-home|Wiki home]]
+- [[../wiki/index|Wiki home]]
 
 ## Sources
 - https://www.notion.so/blog/sharding-postgres-at-notion — primary case study (triggers, sharding scheme, migration approach)
