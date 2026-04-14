@@ -12,8 +12,8 @@ tags:
 aliases: ["Kafka vs RabbitMQ", "Kafka or RabbitMQ Decision"]
 last_updated: 2026-04-11
 sources:
-  - ["Kafka vs RabbitMQ: How to Know Which One to Use (Hello Interview)", "https://www.hellointerview.com/blog/kafka-vs-rabbitmq"]
-  - ["Apache Kafka vs. RabbitMQ: Differences & Comparison (GitHub/AutoMQ)", "https://github.com/AutoMQ/automq/wiki/Apache-Kafka-vs.-RabbitMQ:-Differences-&-Comparison"]
+  - "Kafka vs RabbitMQ: How to Know Which One to Use (Hello Interview)https://www.hellointerview.com/blog/kafka-vs-rabbitmq
+  - "Apache Kafka vs. RabbitMQ: Differences & Comparison (GitHub/AutoMQ)", https://github.com/AutoMQ/automq/wiki/Apache-Kafka-vs.-RabbitMQ:-Differences-&-Comparison"
 ---
 
 ## What this is
