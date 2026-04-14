@@ -12,7 +12,7 @@ This file is **deprecated** and kept only for backwards compatibility with old d
   - Example: "Kafka vs RabbitMQ", "When to leave MongoDB"
   - Structure: What this is → When to use each → Trade-offs → Tipping point → Real examples
 
-- **For guidance:** See `schema/_index.md` for full template guidance
+- **For guidance:** See `schema/index.md` for full template guidance
 
 ## Removed: Old Template Content
 

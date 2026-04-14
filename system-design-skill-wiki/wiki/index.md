@@ -75,7 +75,7 @@ Monitoring, logging, tracing, alerting patterns.
 
 - [[../schema/tool-template|Tool template]]
 - [[../schema/decision-template|Decision template]]
-- [[../schema/_index|Schema index]]
+- [[../schema/index|Schema index]]
 - [[../SKILL.md|SKILL.md - Agent integration]]
 
 ## Quick Navigation
