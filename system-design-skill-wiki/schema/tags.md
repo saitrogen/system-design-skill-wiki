@@ -38,6 +38,7 @@ Tags live in a page’s frontmatter under `tags:` and must match one of the cano
 | postgresql | technology | PostgreSQL (official technology/entity slug). Use for Postgres-specific content. |
 | raw-sources | page-type | Curated reading lists / pointers to external sources (minimal original writing). |
 | redis | technology | Redis-specific content (tool page, decision triggers, or case evidence involving Redis). |
+| redis-caching | concept | Redis as a caching layer; redis-specific caching strategies. |
 | relational | concept | Relational data modeling and SQL-centric trade-offs (constraints, joins, transactions). |
 | scaling | concept | Horizontal/vertical scaling triggers, capacity limits, sharding, and hotspots. |
 | schema | page-type | Schema/template/spec pages that define how to write and structure wiki content. |
@@ -77,7 +78,9 @@ Tags live in a page’s frontmatter under `tags:` and must match one of the cano
 | kafka | technology | Apache Kafka; distributed event streaming platform. |
 | kubernetes | technology | Kubernetes (K8s); container orchestration platform. |
 | log | concept | Logs, log aggregation, and structured logging. |
+| master-replica | concept | Master-replica replication topology and consistency models. |
 | message-broker | technology | Message brokers (RabbitMQ, Kafka, NATS); decouple producers/consumers. |
+| multi-tier | concept | Multi-tier / N-tier architecture; layered application design. |
 | netflix | meta | Case-study subject: Netflix (use on Netflix-related pages). |
 | object-storage | technology | Object storage (S3, GCS, Azure Blob); simple key-value file storage. |
 | observability | domain | Observability (monitoring, logging, tracing, metrics). |
